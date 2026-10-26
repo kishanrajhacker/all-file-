@@ -49,32 +49,18 @@ input,textarea,select{font-family:inherit;font-size:15px}
 img{max-width:100%;display:block}
 :focus-visible{outline:none;box-shadow:var(--focus);border-radius:8px}
 
-/* ---------- Layout ---------- */
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-.topbar{
-  position:sticky;top:0;z-index:40;background:var(--surface);border-bottom:1px solid var(--border);
-  backdrop-filter:blur(8px);
-}
+.topbar{position:sticky;top:0;z-index:40;background:var(--surface);border-bottom:1px solid var(--border);backdrop-filter:blur(8px)}
 .topbar-inner{display:flex;align-items:center;gap:10px;padding:10px 0;min-height:56px}
 .brand{display:flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:17px}
 .brand .dot{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--brand-grad-a),var(--brand-grad-b));display:grid;place-items:center;color:#fff;font-size:13px;font-weight:800}
 .spacer{flex:1}
-.icon-btn{
-  width:44px;height:44px;display:grid;place-items:center;background:transparent;border:1px solid var(--border);
-  border-radius:12px;color:var(--text);transition:.15s;
-}
+.icon-btn{width:44px;height:44px;display:grid;place-items:center;background:transparent;border:1px solid var(--border);border-radius:12px;color:var(--text);transition:.15s}
 .icon-btn:hover{background:var(--surface-2)}
-.user-chip{display:flex;align-items:center;gap:8px;padding:4px 12px 4px 4px;border:1px solid var(--border);border-radius:999px;background:var(--surface-2);max-width:220px}
-.user-chip img{width:32px;height:32px;border-radius:50%;object-fit:cover}
-.user-chip .nm{font-size:13px;font-weight:600;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 .tabs{display:flex;gap:6px;overflow-x:auto;padding:8px 0 12px;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
-.tab{
-  white-space:nowrap;padding:9px 16px;border-radius:999px;border:1px solid var(--border);background:var(--surface);
-  color:var(--text-2);font-weight:600;font-size:14px;min-height:44px;display:inline-flex;align-items:center;gap:6px;
-  transition:.15s;
-}
+.tab{white-space:nowrap;padding:9px 16px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text-2);font-weight:600;font-size:14px;min-height:44px;display:inline-flex;align-items:center;gap:6px;transition:.15s}
 .tab:hover{background:var(--surface-2)}
 .tab.active{background:var(--green);color:#fff;border-color:var(--green)}
 .tab .badge{background:rgba(255,255,255,.25);padding:1px 8px;border-radius:999px;font-size:12px}
@@ -88,11 +74,7 @@ img{max-width:100%;display:block}
 .small{font-size:12.5px;color:var(--text-3)}
 .hidden{display:none!important}
 
-/* ---------- Buttons ---------- */
-.btn{
-  min-height:44px;padding:0 18px;border-radius:12px;border:1px solid var(--border);background:var(--surface);
-  color:var(--text);font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:.15s;justify-content:center;
-}
+.btn{min-height:44px;padding:0 18px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:.15s;justify-content:center}
 .btn:hover{background:var(--surface-2)}
 .btn:disabled{opacity:.5;cursor:not-allowed}
 .btn.primary{background:var(--green);border-color:var(--green);color:#fff}
@@ -102,13 +84,9 @@ img{max-width:100%;display:block}
 .btn.ghost{background:transparent}
 .btn.sm{min-height:36px;padding:0 12px;font-size:13px;border-radius:10px}
 
-/* ---------- Inputs ---------- */
 .field{display:flex;flex-direction:column;gap:6px}
 .field>label{font-size:13px;font-weight:600;color:var(--text-2)}
-.input,.textarea,.select{
-  width:100%;min-height:44px;padding:10px 12px;border:1px solid var(--border);border-radius:12px;
-  background:var(--surface);color:var(--text);transition:.15s;
-}
+.input,.textarea,.select{width:100%;min-height:44px;padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);transition:.15s}
 .textarea{min-height:88px;resize:vertical}
 .input:focus,.textarea:focus,.select:focus{outline:none;border-color:var(--green);box-shadow:var(--focus)}
 .input.err,.textarea.err{border-color:var(--red)}
@@ -122,7 +100,6 @@ img{max-width:100%;display:block}
 .switch input:checked::after{transform:translateX(18px)}
 .switch span{font-size:14px;font-weight:600}
 
-/* ---------- Summary ---------- */
 .summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}
 @media(min-width:640px){.summary{grid-template-columns:repeat(4,1fr)}}
 .stat{padding:14px;border-radius:14px;background:var(--surface);border:1px solid var(--border)}
@@ -131,28 +108,17 @@ img{max-width:100%;display:block}
 .stat.warn{border-color:var(--red);background:var(--red-soft)}
 .stat.warn .n{color:var(--red)}
 
-/* ---------- App list ---------- */
 .toolbar{display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:12px}
 @media(min-width:720px){.toolbar{grid-template-columns:2fr 1fr 1fr 1fr}}
 .applist{display:flex;flex-direction:column;gap:10px}
-.approw{
-  display:grid;grid-template-columns:56px 1fr;gap:12px;padding:12px;border-radius:14px;
-  background:var(--surface);border:1px solid var(--border);
-}
+.approw{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:12px;border-radius:14px;background:var(--surface);border:1px solid var(--border)}
 @media(min-width:720px){.approw{grid-template-columns:56px 1fr auto;align-items:center}}
-.avatar{
-  width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-weight:800;font-size:22px;
-  background:linear-gradient(135deg,var(--green-soft),var(--surface-2));color:var(--green);border:1px solid var(--border);
-  overflow:hidden;flex:none;
-}
+.avatar{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-weight:800;font-size:22px;background:linear-gradient(135deg,var(--green-soft),var(--surface-2));color:var(--green);border:1px solid var(--border);overflow:hidden;flex:none}
 .avatar img{width:100%;height:100%;object-fit:cover}
 .approw .name{font-weight:700;font-size:15.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .approw .pkg{font-size:12.5px;color:var(--text-2);word-break:break-all}
 .approw .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px;font-size:12.5px;color:var(--text-3)}
-.chip{
-  display:inline-flex;align-items:center;gap:5px;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:700;
-  background:var(--surface-2);color:var(--text-2);
-}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:700;background:var(--surface-2);color:var(--text-2)}
 .chip.warn{background:var(--red-soft);color:var(--red)}
 .chip.ok{background:var(--green-soft);color:var(--green)}
 .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
@@ -160,7 +126,6 @@ img{max-width:100%;display:block}
 .star{background:transparent;border:1px solid var(--border);width:40px;height:40px;border-radius:10px;display:grid;place-items:center;color:var(--text-3)}
 .star.on{color:#e8a400;border-color:#e8a400}
 
-/* ---------- Loader ---------- */
 @keyframes spinCW{to{transform:rotate(360deg)}}
 @keyframes spinCCW{to{transform:rotate(-360deg)}}
 @keyframes breathe{0%,100%{transform:scale(.6)}50%{transform:scale(1.15)}}
@@ -182,41 +147,23 @@ img{max-width:100%;display:block}
 }
 .center-loader{display:grid;place-items:center;padding:48px 16px;gap:14px;color:var(--text-2)}
 
-/* ---------- Toast ---------- */
 #toasts{position:fixed;left:16px;right:16px;bottom:16px;z-index:100;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none}
-.toast{
-  pointer-events:auto;background:var(--text);color:var(--bg);padding:11px 16px;border-radius:12px;
-  font-weight:600;font-size:14px;box-shadow:var(--shadow);max-width:520px;width:100%;
-  animation:toastIn .2s ease-out;
-}
+.toast{pointer-events:auto;background:var(--text);color:var(--bg);padding:11px 16px;border-radius:12px;font-weight:600;font-size:14px;box-shadow:var(--shadow);max-width:520px;width:100%;animation:toastIn .2s ease-out}
 .toast.err{background:var(--red);color:#fff}
 .toast.ok{background:var(--green);color:#fff}
 @keyframes toastIn{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
 
-/* ---------- Banner ---------- */
-.offline-banner{
-  position:fixed;left:0;right:0;top:0;z-index:60;background:var(--red);color:#fff;text-align:center;
-  padding:8px 12px;font-size:13px;font-weight:600;transform:translateY(-100%);transition:.25s;
-}
+.offline-banner{position:fixed;left:0;right:0;top:0;z-index:60;background:var(--red);color:#fff;text-align:center;padding:8px 12px;font-size:13px;font-weight:600;transform:translateY(-100%);transition:.25s}
 .offline-banner.show{transform:none}
 .offline-banner::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#fff;margin-right:8px;animation:blink 1s infinite}
 @keyframes blink{50%{opacity:.25}}
 
-/* ---------- Dialog ---------- */
 .dialog-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:80;display:none;place-items:center;padding:16px}
 .dialog-backdrop.show{display:grid}
 .dialog{background:var(--surface);border-radius:18px;max-width:440px;width:100%;padding:20px;box-shadow:var(--shadow);animation:toastIn .2s}
 .dialog h3{font-size:18px;margin-bottom:8px}
 .dialog .row{margin-top:16px;justify-content:flex-end}
 
-/* ---------- Login ---------- */
-.login{min-height:100vh;display:grid;place-items:center;padding:20px}
-.login-card{max-width:400px;width:100%;padding:32px 24px;text-align:center}
-.login-card h1{font-size:24px;margin-bottom:6px}
-.login-card .logo{width:64px;height:64px;border-radius:20px;background:linear-gradient(135deg,var(--brand-grad-a),var(--brand-grad-b));display:grid;place-items:center;margin:0 auto 16px;color:#fff;font-weight:800;font-size:26px;font-family:"Bricolage Grotesque",sans-serif}
-.google-btn{margin-top:20px;width:100%;min-height:50px;font-size:15px}
-
-/* ---------- Misc ---------- */
 .section-title{font-size:19px;font-weight:700;margin-bottom:4px}
 .banner-info{background:var(--green-soft);border:1px solid var(--border);color:var(--text);padding:12px 14px;border-radius:12px;font-size:13.5px}
 .error-card{border-color:var(--red);background:var(--red-soft)}
@@ -228,12 +175,10 @@ img{max-width:100%;display:block}
 @media(min-width:720px){.io-grid{grid-template-columns:1fr 1fr}}
 .thumb{width:44px;height:44px;border-radius:10px;object-fit:cover;border:1px solid var(--border);background:var(--surface-2)}
 .preview-row{display:flex;align-items:center;gap:10px}
-kbd{background:var(--surface-2);border:1px solid var(--border);border-radius:6px;padding:1px 6px;font-size:12px;font-family:"JetBrains Mono",monospace}
 </style>
 </head>
 <body>
 
-<!-- Shared SVG defs (gradients) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <linearGradient id="loaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -243,53 +188,41 @@ kbd{background:var(--surface-2);border:1px solid var(--border);border-radius:6px
   </defs>
 </svg>
 
-<div class="offline-banner" id="offlineBanner">Internet nahi hai — changes save nahi honge</div>
-
-<!-- LOGIN SCREEN -->
-<div id="loginScreen" class="login">
-  <div class="card login-card">
-    <div class="logo">A</div>
-    <h1>APK Store Admin</h1>
-    <p class="muted">Sirf admin hi login kar sakta hai. Google se sign in karein.</p>
-    <div id="loginLoader" class="hidden" style="margin-top:20px"></div>
-    <button id="googleLoginBtn" class="btn primary google-btn" type="button">
-      <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2c-2 1.5-4.5 2.4-7.2 2.4-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.1 5.6l6.2 5.2C41.2 35.2 44 30 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>
-      Google se login
-    </button>
-    <div id="loginMsg" class="err-msg" style="margin-top:14px"></div>
+<div id="gate" style="position:fixed;inset:0;z-index:200;background:var(--bg);display:grid;place-items:center;padding:16px">
+  <div class="card pad" style="max-width:380px;width:100%;text-align:center">
+    <div class="brand" style="justify-content:center;margin-bottom:10px"><span class="dot">A</span> APK Admin</div>
+    <p class="muted" id="gateMsg">Login check ho raha hai…</p>
+    <div class="row" style="justify-content:center;margin-top:12px">
+      <button class="btn primary hidden" id="gateLogin" type="button">Google se login</button>
+      <button class="btn hidden" id="gateOut" type="button">Sign out</button>
+    </div>
   </div>
 </div>
 
-<!-- ADMIN SCREEN -->
-<div id="adminScreen" class="hidden">
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <div class="brand"><span class="dot">A</span> APK Admin</div>
-      <div class="spacer"></div>
-      <div class="user-chip" id="userChip" style="display:none">
-        <img id="userPhoto" alt="" />
-        <span class="nm" id="userName"></span>
-      </div>
-      <button class="icon-btn" id="themeBtn" type="button" aria-label="Theme toggle">🌓</button>
-      <button class="btn sm ghost" id="signOutBtn" type="button">Sign out</button>
-    </div>
-  </header>
+<div class="offline-banner" id="offlineBanner">Internet nahi hai — changes save nahi honge</div>
 
-  <div class="wrap">
-    <nav class="tabs" id="tabs" role="tablist">
-      <a class="tab" href="#/" data-tab="apps" role="tab">Apps <span class="badge" id="appsCount">0</span></a>
-      <a class="tab" href="#/new" data-tab="new" role="tab">Naya app</a>
-      <a class="tab" href="#/fix" data-tab="fix" role="tab">Adhoore apps theek karein <span class="badge hidden" id="fixCount">0</span></a>
-      <a class="tab" href="#/io" data-tab="io" role="tab">Import / Export</a>
-    </nav>
-
-    <main id="view" style="padding-bottom:40px"></main>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand"><span class="dot">A</span> APK Admin</div>
+    <div class="spacer"></div>
+    <span class="muted hidden" id="userName" style="max-width:40vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></span>
+    <button class="btn sm hidden" id="signOutBtn" type="button">Sign out</button>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Theme toggle">🌓</button>
   </div>
+</header>
+
+<div class="wrap">
+  <nav class="tabs" id="tabs" role="tablist">
+    <a class="tab" href="#/" data-tab="apps" role="tab">Apps <span class="badge" id="appsCount">0</span></a>
+    <a class="tab" href="#/new" data-tab="new" role="tab">Naya app</a>
+    <a class="tab" href="#/fix" data-tab="fix" role="tab">Adhoore apps theek karein <span class="badge hidden" id="fixCount">0</span></a>
+    <a class="tab" href="#/io" data-tab="io" role="tab">Import / Export</a>
+  </nav>
+  <main id="view" style="padding-bottom:40px"></main>
 </div>
 
 <div id="toasts" aria-live="polite" aria-atomic="true"></div>
 
-<!-- Confirm Dialog -->
 <div class="dialog-backdrop" id="dialogBackdrop">
   <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dlgTitle">
     <h3 id="dlgTitle">Confirm</h3>
@@ -306,13 +239,13 @@ kbd{background:var(--surface-2);border:1px solid var(--border);border-radius:6px
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
-  getAuth, onAuthStateChanged, signInWithPopup, signInWithRedirect, getRedirectResult,
-  GoogleAuthProvider, signOut
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import {
   getDatabase, ref, push, set, update, remove, onValue, query, orderByChild,
-  serverTimestamp, onDisconnect, goOnline, goOffline
+  serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import {
+  getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect,
+  onAuthStateChanged, signOut
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 /* ============================================================
    CONFIG
@@ -326,27 +259,22 @@ const firebaseConfig = {
   messagingSenderId: "529479289404",
   appId: "1:529479289404:web:ddc8f00f65fae56799d139"
 };
-const ADMIN_EMAILS = ["krishna95079kr@gmail.com"].map(e => e.toLowerCase());
 const APPS_PATH = "apps";
 const GITHUB_USER = "kishanrajhacker";
 const GITHUB_REPO = "apk-files";
 const GITHUB_TAG = "apps";
 
-/* ============================================================
-   INIT FIREBASE
-   ============================================================ */
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
 const db = getDatabase(app);
+const auth = getAuth(app);
+const ADMIN_EMAILS = ["krishna95079kr@gmail.com"];
 
 /* ============================================================
    STATE
    ============================================================ */
 const state = {
-  user: null,
-  apps: {},           // id -> normalized app
+  apps: {},
   unsubApps: null,
-  currentRoute: "#/",
   editingId: null,
   isOnline: navigator.onLine,
   connected: false,
@@ -354,8 +282,7 @@ const state = {
   firstLoad: true,
   saving: false,
   categories: new Set(),
-  confirmResolve: null,
-  fixDrafts: {},      // id -> {packageName, versionCode}
+  fixDrafts: {},
 };
 
 /* ============================================================
@@ -377,7 +304,6 @@ const num = v => {
   return null;
 };
 const safeLower = v => (isStr(v) ? v.toLowerCase() : "");
-const escapeHtml = s => isStr(s) ? s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])) : "";
 
 const PKG_RE = /^[A-Za-z][A-Za-z0-9_]*(\.[A-Za-z][A-Za-z0-9_]*)+$/;
 const HEX64 = /^[a-f0-9]{64}$/;
@@ -389,7 +315,13 @@ function toast(msg, type = "") {
     t.style.transition = "opacity .3s";
     t.style.opacity = "0";
     setTimeout(() => t.remove(), 320);
-  }, 2600);
+  }, type === "err" ? 20000 : 2600);
+  t.addEventListener("click", () => t.remove());
+}
+function errInfo(e) {
+  let who = "login nahi";
+  try { who = (auth.currentUser && auth.currentUser.email) || "login nahi"; } catch (_) {}
+  return ((e && (e.code || "")) + " " + ((e && e.message) || "")).trim() + " | login: " + who;
 }
 
 /* ---------- Theme ---------- */
@@ -432,12 +364,10 @@ function createLoader(size = 40) {
   svg.setAttribute("height", size);
   svg.setAttribute("viewBox", `0 0 ${size} ${size}`);
 
-  // outer 270 arc
   const arc = document.createElementNS(svgNS, "circle");
   arc.setAttribute("class", "arc");
   const arcR = r - 3;
-  arc.setAttribute("cx", r);
-  arc.setAttribute("cy", r);
+  arc.setAttribute("cx", r); arc.setAttribute("cy", r);
   arc.setAttribute("r", arcR);
   arc.setAttribute("fill", "none");
   arc.setAttribute("stroke", "url(#loaderGrad)");
@@ -448,13 +378,10 @@ function createLoader(size = 40) {
   arc.setAttribute("stroke-dasharray", `${dash} ${circ}`);
   svg.appendChild(arc);
 
-  // inner dashed
   const inner2 = document.createElementNS(svgNS, "circle");
   inner2.setAttribute("class", "dash");
-  const innerR = inner;
-  inner2.setAttribute("cx", r);
-  inner2.setAttribute("cy", r);
-  inner2.setAttribute("r", innerR);
+  inner2.setAttribute("cx", r); inner2.setAttribute("cy", r);
+  inner2.setAttribute("r", inner);
   inner2.setAttribute("fill", "none");
   inner2.setAttribute("stroke", "var(--teal)");
   inner2.setAttribute("stroke-width", Math.max(1.2, size * 0.03));
@@ -462,7 +389,6 @@ function createLoader(size = 40) {
   inner2.setAttribute("opacity", "0.8");
   svg.appendChild(inner2);
 
-  // orbiting dots
   const orbit = document.createElementNS(svgNS, "g");
   orbit.setAttribute("class", "orbit");
   const orbitR = r * 0.62;
@@ -472,8 +398,7 @@ function createLoader(size = 40) {
     const cy = r + orbitR * Math.sin(ang);
     const dot = document.createElementNS(svgNS, "circle");
     dot.setAttribute("class", "dot");
-    dot.setAttribute("cx", cx);
-    dot.setAttribute("cy", cy);
+    dot.setAttribute("cx", cx); dot.setAttribute("cy", cy);
     dot.setAttribute("r", Math.max(1.5, size * 0.055));
     dot.setAttribute("fill", i === 1 ? "var(--teal)" : "var(--green)");
     dot.style.animationDelay = (i * 0.18) + "s";
@@ -482,7 +407,6 @@ function createLoader(size = 40) {
   }
   svg.appendChild(orbit);
 
-  // center arrow (download)
   const arrow = document.createElementNS(svgNS, "g");
   arrow.setAttribute("class", "arrow");
   const a = inner * 0.55;
@@ -495,10 +419,8 @@ function createLoader(size = 40) {
   p1.setAttribute("stroke-linejoin", "round");
   arrow.appendChild(p1);
   const p2 = document.createElementNS(svgNS, "line");
-  p2.setAttribute("x1", r);
-  p2.setAttribute("y1", r - a * 0.65);
-  p2.setAttribute("x2", r);
-  p2.setAttribute("y2", r + a * 0.05);
+  p2.setAttribute("x1", r); p2.setAttribute("y1", r - a * 0.65);
+  p2.setAttribute("x2", r); p2.setAttribute("y2", r + a * 0.05);
   p2.setAttribute("stroke", "var(--green)");
   p2.setAttribute("stroke-width", Math.max(1.8, size * 0.055));
   p2.setAttribute("stroke-linecap", "round");
@@ -510,7 +432,7 @@ function createLoader(size = 40) {
 }
 
 /* ============================================================
-   NORMALIZE APP
+   NORMALIZE
    ============================================================ */
 function asArray(val) {
   if (Array.isArray(val)) return val.slice();
@@ -550,175 +472,13 @@ function normalize(id, data) {
     size, sizeBytes, category, publisher, rating: isNum(rating) ? rating : null,
     downloads, icon, apkUrl, sha256, description, fullDescription, whatsNew, screenshots,
     published, featured, createdAt, updatedAt,
-    _missingPkg: missingPkg, _missingVC: missingVC,
-    _raw: d
+    _missingPkg: missingPkg, _missingVC: missingVC, _raw: d
   };
 }
 
 /* ============================================================
-   AUTH
+   ONLINE / OFFLINE
    ============================================================ */
-const provider = new GoogleAuthProvider();
-provider.setCustomParameters({ prompt: "select_account" });
-
-function showLogin() {
-  $("#loginScreen").classList.remove("hidden");
-  $("#adminScreen").classList.add("hidden");
-  $("#userChip").style.display = "none";
-}
-function showAdmin(user) {
-  $("#loginScreen").classList.add("hidden");
-  $("#adminScreen").classList.remove("hidden");
-  const chip = $("#userChip");
-  chip.style.display = "flex";
-  $("#userName").textContent = user.displayName || user.email || "Admin";
-  const photo = $("#userPhoto");
-  if (user.photoURL) { photo.src = user.photoURL; photo.style.display = "block"; }
-  else { photo.style.display = "none"; }
-}
-
-async function doLogin() {
-  const msg = $("#loginMsg");
-  msg.textContent = "";
-  const btn = $("#googleLoginBtn");
-  const ll = $("#loginLoader");
-  ll.innerHTML = "";
-  ll.appendChild(createLoader(32));
-  ll.classList.remove("hidden");
-  btn.disabled = true;
-  try {
-    await signInWithPopup(auth, provider);
-  } catch (e) {
-    // fallback to redirect
-    if (e && (e.code === "auth/popup-blocked" || e.code === "auth/popup-closed-by-user" || e.code === "auth/cancelled-popup-request")) {
-      try { await signInWithRedirect(auth, provider); return; }
-      catch (e2) { msg.textContent = "Login fail: " + (e2.message || e2.code || "unknown"); }
-    } else {
-      msg.textContent = "Login fail: " + (e.message || e.code || "unknown");
-    }
-  } finally {
-    btn.disabled = false;
-    ll.classList.add("hidden");
-    ll.innerHTML = "";
-  }
-}
-$("#googleLoginBtn").addEventListener("click", doLogin);
-
-async function doSignOut() {
-  try { unsubscribeApps(); } catch(_) {}
-  try { await signOut(auth); } catch (_) {}
-  state.apps = {};
-  showLogin();
-}
-$("#signOutBtn").addEventListener("click", doSignOut);
-
-function isAdmin(email) {
-  return isStr(email) && ADMIN_EMAILS.includes(email.toLowerCase());
-}
-
-let authResolved = false;
-onAuthStateChanged(auth, (user) => {
-  authResolved = true;
-  state.user = user;
-  if (!user) {
-    showLogin();
-    return;
-  }
-  if (!isAdmin(user.email)) {
-    // Not admin: show message + sign out only
-    $("#loginScreen").classList.remove("hidden");
-    $("#adminScreen").classList.add("hidden");
-    const card = $(".login-card");
-    card.innerHTML = "";
-    const logo = el("div", "logo", "!");
-    logo.style.background = "var(--red)";
-    card.appendChild(logo);
-    card.appendChild(el("h1", "", "Aap admin nahi hain"));
-    const p = el("p", "muted", "Yeh panel sirf authorized admin ke liye hai. Sahi Google account se login karein.");
-    card.appendChild(p);
-    const btn = el("button", "btn danger google-btn", "Sign out");
-    btn.type = "button";
-    btn.addEventListener("click", doSignOut);
-    card.appendChild(btn);
-    return;
-  }
-  showAdmin(user);
-  initApp();
-});
-
-// Handle redirect result silently
-try { getRedirectResult(auth).catch(() => {}); } catch (_) {}
-
-/* ============================================================
-   DATA SUBSCRIPTION
-   ============================================================ */
-function unsubscribeApps() {
-  if (state.unsubApps) {
-    try { state.unsubApps(); } catch (_) {}
-    state.unsubApps = null;
-  }
-}
-
-function initApp() {
-  unsubscribeApps();
-  state.readError = null;
-  state.apps = {};
-  state.categories = new Set();
-  state.firstLoad = true;
-  renderRoute();
-  subscribeApps();
-  subscribeConnection();
-}
-
-function subscribeApps() {
-  unsubscribeApps();
-  try {
-    const q = query(ref(db, APPS_PATH), orderByChild("createdAt"));
-    state.unsubApps = onValue(q, (snap) => {
-      state.firstLoad = false;
-      state.readError = null;
-      const val = snap.val();
-      const map = {};
-      if (val && typeof val === "object") {
-        Object.keys(val).forEach(k => {
-          map[k] = normalize(k, val[k]);
-        });
-      }
-      state.apps = map;
-      rebuildCategories();
-      updateTabCounts();
-      renderRoute();
-    }, (err) => {
-      state.firstLoad = false;
-      state.readError = err;
-      renderRoute();
-    });
-  } catch (e) {
-    state.readError = e;
-    state.firstLoad = false;
-    renderRoute();
-  }
-}
-
-function rebuildCategories() {
-  const set = new Set();
-  Object.values(state.apps).forEach(a => {
-    if (a.category) set.add(a.category.trim());
-  });
-  state.categories = set;
-}
-
-let unsubConn = null;
-function subscribeConnection() {
-  if (unsubConn) { try { unsubConn(); } catch(_){} unsubConn = null; }
-  try {
-    unsubConn = onValue(ref(db, ".info/connected"), (snap) => {
-      state.connected = snap.val() === true;
-      updateOnlineUI();
-    });
-  } catch (_) {}
-}
-
 function updateOnlineUI() {
   const off = !state.isOnline || !state.connected;
   const banner = $("#offlineBanner");
@@ -738,22 +498,28 @@ function updateOnlineUI() {
     else n.setAttribute("aria-disabled", String(disabled));
   });
 }
-
 window.addEventListener("online", () => { state.isOnline = true; updateOnlineUI(); });
 window.addEventListener("offline", () => { state.isOnline = false; updateOnlineUI(); });
-updateOnlineUI();
 
 function canWrite() {
   return state.isOnline && state.connected;
 }
 
+let unsubConn = null;
+function subscribeConnection() {
+  if (unsubConn) { try { unsubConn(); } catch(_){} unsubConn = null; }
+  try {
+    unsubConn = onValue(ref(db, ".info/connected"), (snap) => {
+      state.connected = snap.val() === true;
+      updateOnlineUI();
+    });
+  } catch (_) {}
+}
+
 /* ============================================================
    ROUTING
    ============================================================ */
-window.addEventListener("hashchange", () => {
-  state.currentRoute = location.hash || "#/";
-  renderRoute();
-});
+window.addEventListener("hashchange", renderRoute);
 
 function navigate(hash) {
   if (location.hash === hash) renderRoute();
@@ -782,7 +548,6 @@ function updateTabCounts() {
 
 function renderRoute() {
   const r = parseRoute();
-  // Tabs active state
   $$(".tab").forEach(t => {
     const k = t.getAttribute("data-tab");
     let active = false;
@@ -807,7 +572,6 @@ function renderRoute() {
     view.appendChild(renderReadError(state.readError));
     return;
   }
-
   if (r.page === "apps") view.appendChild(renderAppsPage());
   else if (r.page === "new") view.appendChild(renderFormPage(null));
   else if (r.page === "edit") view.appendChild(renderFormPage(r.id));
@@ -824,7 +588,7 @@ function renderReadError(err) {
   const msg = (err && (err.message || err.code)) || "Unknown error";
   card.appendChild(el("p", "muted", msg));
   if (String(msg).toLowerCase().includes("permission")) {
-    card.appendChild(el("p", "banner-info", "Rules publish karein aur sahi email se login karein. Realtime Database -> Rules me admin rules paste karke Publish karein."));
+    card.appendChild(el("p", "banner-info", "Rules publish karein aur sahi Google email se login karein."));
   }
   const btn = el("button", "btn primary", "Retry");
   btn.type = "button";
@@ -840,7 +604,7 @@ function renderReadError(err) {
 const listState = {
   search: "",
   category: "__all__",
-  status: "all", // all | published | hidden
+  status: "all",
   sort: "newest"
 };
 
@@ -848,7 +612,6 @@ function renderAppsPage() {
   const frag = document.createDocumentFragment();
   const apps = Object.values(state.apps);
 
-  // Summary
   const total = apps.length;
   const published = apps.filter(a => a.published).length;
   const hidden = total - published;
@@ -863,7 +626,6 @@ function renderAppsPage() {
   summary.appendChild(w);
   frag.appendChild(summary);
 
-  // Toolbar
   const toolbar = el("div", "toolbar");
   const search = el("input", "input");
   search.type = "search";
@@ -904,7 +666,6 @@ function renderAppsPage() {
 
   frag.appendChild(toolbar);
 
-  // List container
   const listEl = el("div", "applist");
   listEl.id = "appList";
   frag.appendChild(listEl);
@@ -930,17 +691,12 @@ function filteredApps() {
       safeLower(a.publisher).includes(q)
     );
   }
-  if (listState.category !== "__all__") {
-    list = list.filter(a => a.category === listState.category);
-  }
+  if (listState.category !== "__all__") list = list.filter(a => a.category === listState.category);
   if (listState.status === "published") list = list.filter(a => a.published);
   else if (listState.status === "hidden") list = list.filter(a => !a.published);
 
-  if (listState.sort === "newest") {
-    list.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
-  } else {
-    list.sort((a, b) => safeLower(a.name).localeCompare(safeLower(b.name)));
-  }
+  if (listState.sort === "newest") list.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+  else list.sort((a, b) => safeLower(a.name).localeCompare(safeLower(b.name)));
   return list;
 }
 
@@ -971,13 +727,10 @@ function rerenderList() {
 function renderAppRow(a) {
   const row = el("div", "approw");
 
-  // Avatar
   const av = el("div", "avatar");
   if (a.icon && /^https:\/\//i.test(a.icon)) {
     const img = document.createElement("img");
-    img.src = a.icon;
-    img.alt = "";
-    img.loading = "lazy";
+    img.src = a.icon; img.alt = ""; img.loading = "lazy";
     img.addEventListener("error", () => {
       av.innerHTML = "";
       av.textContent = (a.name || "?")[0]?.toUpperCase() || "?";
@@ -988,7 +741,6 @@ function renderAppRow(a) {
   }
   row.appendChild(av);
 
-  // Info
   const info = el("div");
   const nameEl = el("div", "name");
   nameEl.textContent = a.name || "(no name)";
@@ -1017,7 +769,6 @@ function renderAppRow(a) {
   }
   row.appendChild(info);
 
-  // Actions
   const actions = el("div", "actions");
 
   const pubWrap = el("label", "switch");
@@ -1034,7 +785,7 @@ function renderAppRow(a) {
       toast(val ? "Publish ho gaya" : "Hide kar diya", "ok");
     } catch (e) {
       pubInput.checked = !pubInput.checked;
-      toast("Save fail: " + (e.message || e.code), "err");
+      toast("Save fail: " + errInfo(e), "err");
     }
   });
   pubWrap.appendChild(pubInput);
@@ -1052,7 +803,7 @@ function renderAppRow(a) {
       await update(ref(db, `${APPS_PATH}/${a.id}`), { featured: !a.featured, updatedAt: serverTimestamp() });
       toast(!a.featured ? "Featured" : "Featured hataya", "ok");
     } catch (e) {
-      toast("Save fail: " + (e.message || e.code), "err");
+      toast("Save fail: " + errInfo(e), "err");
     }
   });
   actions.appendChild(star);
@@ -1099,7 +850,6 @@ function confirmDelete(name) {
     errEl.textContent = "";
     backdrop.classList.add("show");
     setTimeout(() => input.focus(), 50);
-    state.confirmResolve = resolve;
 
     function cleanup(result) {
       backdrop.classList.remove("show");
@@ -1107,7 +857,6 @@ function confirmDelete(name) {
       cancel.removeEventListener("click", onCancel);
       ok.removeEventListener("click", onOk);
       document.removeEventListener("keydown", onKey);
-      state.confirmResolve = null;
       resolve(result);
     }
     function onInput() {
@@ -1122,9 +871,7 @@ function confirmDelete(name) {
       }
       cleanup(true);
     }
-    function onKey(e) {
-      if (e.key === "Escape") cleanup(false);
-    }
+    function onKey(e) { if (e.key === "Escape") cleanup(false); }
     input.addEventListener("input", onInput);
     cancel.addEventListener("click", onCancel);
     ok.addEventListener("click", onOk);
@@ -1133,7 +880,7 @@ function confirmDelete(name) {
 }
 
 /* ============================================================
-   FORM PAGE (new / edit)
+   FORM PAGE
    ============================================================ */
 function renderFormPage(id) {
   const isEdit = !!id;
@@ -1151,7 +898,6 @@ function renderFormPage(id) {
   const form = el("form", "card pad stack");
   form.noValidate = true;
 
-  // Header
   const header = el("div");
   header.appendChild(el("h2", "section-title", isEdit ? "App edit karein" : "Naya app"));
   header.appendChild(el("p", "muted", isEdit ? "Fields ko update karein aur Save dabayein." : "APK GitHub Releases par upload karke link paste karein."));
@@ -1162,7 +908,6 @@ function renderFormPage(id) {
     form.appendChild(banner);
   }
 
-  // Values
   const v = existing || {
     name: "", packageName: "", versionCode: null, version: "", size: "", sizeBytes: null,
     category: "", publisher: "", rating: null, downloads: "", icon: "", apkUrl: "",
@@ -1170,9 +915,7 @@ function renderFormPage(id) {
     published: true, featured: false
   };
 
-  // Grid
   const grid = el("div", "form-grid");
-
   const fields = {};
   function makeField(key, label, opts = {}) {
     const wrap = el("div", "field" + (opts.full ? " full" : ""));
@@ -1195,69 +938,48 @@ function renderFormPage(id) {
     wrap.appendChild(input);
     const err = el("div", "err-msg");
     wrap.appendChild(err);
-    if (opts.hint) {
-      const hint = el("div", "small", opts.hint);
-      wrap.appendChild(hint);
-    }
+    if (opts.hint) wrap.appendChild(el("div", "small", opts.hint));
     fields[key] = { input, err, wrap };
     return wrap;
   }
 
-  // name
   grid.appendChild(makeField("name", "App name *", { placeholder: "Church Connect" }));
-  // packageName
   grid.appendChild(makeField("packageName", "Package name *", { placeholder: "com.example.app", hint: "Format: com.company.app" }));
-  // versionCode
   grid.appendChild(makeField("versionCode", "Version code *", { type: "number", min: 1, inputmode: "numeric" }));
-  // version
   grid.appendChild(makeField("version", "Version name", { placeholder: "1.1.0" }));
-  // size
   grid.appendChild(makeField("size", "Size", { placeholder: "26.9 MB" }));
-  // category
+
   const catWrap = makeField("category", "Category", { list: "categoryList", placeholder: "Game / Social / Tool" });
   const dl = document.createElement("datalist");
   dl.id = "categoryList";
-  const builtins = ["Game", "Social", "Tool"];
-  const allCats = new Set([...builtins, ...state.categories]);
+  const allCats = new Set(["Game","Social","Tool", ...state.categories]);
   allCats.forEach(c => { const o = document.createElement("option"); o.value = c; dl.appendChild(o); });
   catWrap.appendChild(dl);
   grid.appendChild(catWrap);
-  // publisher
+
   grid.appendChild(makeField("publisher", "Publisher", { placeholder: "Developer name" }));
-  // rating
   grid.appendChild(makeField("rating", "Rating (0-5)", { type: "number", min: 0, max: 5, step: 0.1 }));
-  // downloads
   grid.appendChild(makeField("downloads", "Downloads", { placeholder: "1K+" }));
-  // icon
+
   const iconWrap = makeField("icon", "Icon URL (https)", { type: "url", placeholder: "https://..." });
   const previewRow = el("div", "preview-row");
   previewRow.style.marginTop = "8px";
   const thumb = document.createElement("img");
-  thumb.className = "thumb";
-  thumb.alt = "";
-  thumb.style.display = "none";
+  thumb.className = "thumb"; thumb.alt = ""; thumb.style.display = "none";
   const thumbPh = el("div", "small", "Preview yahan");
   previewRow.appendChild(thumb);
   previewRow.appendChild(thumbPh);
   iconWrap.appendChild(previewRow);
   fields.icon.input.addEventListener("input", () => {
     const u = fields.icon.input.value.trim();
-    if (/^https:\/\//i.test(u)) {
-      thumb.src = u;
-      thumb.style.display = "block";
-      thumbPh.style.display = "none";
-    } else {
-      thumb.style.display = "none";
-      thumbPh.style.display = "block";
-    }
+    if (/^https:\/\//i.test(u)) { thumb.src = u; thumb.style.display = "block"; thumbPh.style.display = "none"; }
+    else { thumb.style.display = "none"; thumbPh.style.display = "block"; }
   });
   grid.appendChild(iconWrap);
 
-  // apkUrl (full)
   const apkWrap = makeField("apkUrl", "APK URL (https direct link) *", { type: "url", placeholder: "https://github.com/.../releases/download/apps/file.apk", full: true });
   grid.appendChild(apkWrap);
 
-  // GitHub link builder
   const ghBox = el("div", "field full");
   ghBox.style.marginTop = "4px";
   ghBox.appendChild(el("label", "", "GitHub link builder"));
@@ -1290,20 +1012,12 @@ function renderFormPage(id) {
   ghBox.appendChild(el("div", "small", "File seedhi download honi chahiye, koi page nahi khulna chahiye"));
   grid.appendChild(ghBox);
 
-  // sha256
-  grid.appendChild(makeField("sha256", "SHA-256 (optional)", { placeholder: "64 hex characters", full: false }));
-
-  // description
+  grid.appendChild(makeField("sha256", "SHA-256 (optional)", { placeholder: "64 hex characters" }));
   grid.appendChild(makeField("description", "Short description", { type: "textarea", rows: 2, full: true }));
-  // fullDescription
   grid.appendChild(makeField("fullDescription", "Full description", { type: "textarea", rows: 4, full: true }));
-  // whatsNew
   grid.appendChild(makeField("whatsNew", "What's new", { type: "textarea", rows: 2, full: true }));
-  // screenshots
-  const ssWrap = makeField("screenshots", "Screenshots (one https URL per line)", { type: "textarea", rows: 3, full: true });
-  grid.appendChild(ssWrap);
+  grid.appendChild(makeField("screenshots", "Screenshots (one https URL per line)", { type: "textarea", rows: 3, full: true }));
 
-  // switches
   const swRow = el("div", "row full");
   swRow.style.marginTop = "4px";
   const pubSw = el("label", "switch");
@@ -1322,7 +1036,6 @@ function renderFormPage(id) {
 
   form.appendChild(grid);
 
-  // APK auto-fill
   const apkBox = el("div", "field full");
   apkBox.style.marginTop = "4px";
   apkBox.appendChild(el("label", "", "APK auto-fill (optional, file upload nahi hoti)"));
@@ -1337,8 +1050,7 @@ function renderFormPage(id) {
   const apkStatus = el("div", "small");
   apkRow.appendChild(apkStatus);
   apkBox.appendChild(apkRow);
-  const apkHint = el("div", "small", "Sirf file padhi jaati hai — upload nahi hoti. Bade APK ke liye sha256 PC par sha256sum se nikalein.");
-  apkBox.appendChild(apkHint);
+  apkBox.appendChild(el("div", "small", "Sirf file padhi jaati hai — upload nahi hoti. Bade APK ke liye sha256 PC par sha256sum se nikalein."));
   form.appendChild(apkBox);
 
   apkInput.addEventListener("change", async () => {
@@ -1350,51 +1062,30 @@ function renderFormPage(id) {
     apkStatus.appendChild(span);
     let result = null;
     try {
-      result = await readApkMeta(f, (p) => {
-        span.textContent = ` APK padh rahe hain... ${Math.round(p)}%`;
-      });
-    } catch (e) {
-      result = null;
-    }
+      result = await readApkMeta(f, (p) => { span.textContent = ` APK padh rahe hain... ${Math.round(p)}%`; });
+    } catch (_) { result = null; }
     apkStatus.innerHTML = "";
     if (!result) {
       apkStatus.textContent = "Is APK se auto-fill nahi ho paya, manually bharein";
       return;
     }
     let filled = 0;
-    // size + sizeBytes always safe to fill if empty
     if (result.sizeBytes && !fields.size.input.value.trim()) {
-      fields.size.input.value = formatBytes(result.sizeBytes);
-      filled++;
+      fields.size.input.value = formatBytes(result.sizeBytes); filled++;
     }
-    if (result.sizeBytes) {
-      fields.size.input.dataset.sizeBytes = String(result.sizeBytes);
-    }
-    // package
+    if (result.sizeBytes) fields.size.input.dataset.sizeBytes = String(result.sizeBytes);
     if (result.packageName) {
-      if (!fields.packageName.input.value.trim()) {
-        fields.packageName.input.value = result.packageName; filled++;
-      } else if (fields.packageName.input.value.trim() !== result.packageName) {
-        await maybeReplace(fields.packageName, result.packageName, apkStatus);
-      }
+      if (!fields.packageName.input.value.trim()) { fields.packageName.input.value = result.packageName; filled++; }
+      else if (fields.packageName.input.value.trim() !== result.packageName) await maybeReplace(fields.packageName, result.packageName, apkStatus);
     }
-    // versionCode
     if (result.versionCode != null) {
-      if (!fields.versionCode.input.value.trim()) {
-        fields.versionCode.input.value = String(result.versionCode); filled++;
-      } else if (String(fields.versionCode.input.value) !== String(result.versionCode)) {
-        await maybeReplace(fields.versionCode, String(result.versionCode), apkStatus);
-      }
+      if (!fields.versionCode.input.value.trim()) { fields.versionCode.input.value = String(result.versionCode); filled++; }
+      else if (String(fields.versionCode.input.value) !== String(result.versionCode)) await maybeReplace(fields.versionCode, String(result.versionCode), apkStatus);
     }
-    // versionName
     if (result.versionName) {
-      if (!fields.version.input.value.trim()) {
-        fields.version.input.value = result.versionName; filled++;
-      } else if (fields.version.input.value.trim() !== result.versionName) {
-        await maybeReplace(fields.version, result.versionName, apkStatus);
-      }
+      if (!fields.version.input.value.trim()) { fields.version.input.value = result.versionName; filled++; }
+      else if (fields.version.input.value.trim() !== result.versionName) await maybeReplace(fields.version, result.versionName, apkStatus);
     }
-    // SHA-256
     if (f.size <= 150 * 1024 * 1024) {
       apkStatus.innerHTML = "";
       apkStatus.appendChild(createLoader(18));
@@ -1402,9 +1093,7 @@ function renderFormPage(id) {
       apkStatus.appendChild(span2);
       try {
         const hex = await sha256File(f, (p) => { span2.textContent = ` SHA-256 nikal rahe hain... ${Math.round(p)}%`; });
-        if (hex) {
-          if (!fields.sha256.input.value.trim()) fields.sha256.input.value = hex;
-        }
+        if (hex && !fields.sha256.input.value.trim()) fields.sha256.input.value = hex;
       } catch (_) {}
       apkStatus.innerHTML = "";
     } else {
@@ -1417,24 +1106,18 @@ function renderFormPage(id) {
 
   function maybeReplace(field, newVal, statusEl) {
     return new Promise(resolve => {
-      const chip = el("button", "btn sm", `Replace ${field.input.previousElementSibling?.textContent || ""}?`);
-      chip.type = "button";
       const holder = el("div", "row");
       holder.style.marginTop = "6px";
       holder.appendChild(el("span", "small", `File me ${newVal} hai. Replace karein?`));
-      const yes = el("button", "btn sm primary", "Haan");
-      yes.type = "button";
-      const no = el("button", "btn sm", "Nahi");
-      no.type = "button";
-      holder.appendChild(yes);
-      holder.appendChild(no);
+      const yes = el("button", "btn sm primary", "Haan"); yes.type = "button";
+      const no = el("button", "btn sm", "Nahi"); no.type = "button";
+      holder.appendChild(yes); holder.appendChild(no);
       statusEl.appendChild(holder);
       yes.addEventListener("click", () => { field.input.value = newVal; holder.remove(); resolve(true); });
       no.addEventListener("click", () => { holder.remove(); resolve(false); });
     });
   }
 
-  // Buttons
   const btnRow = el("div", "row");
   btnRow.style.marginTop = "8px";
   const saveBtn = el("button", "btn primary", isEdit ? "Save changes" : "App save karein");
@@ -1449,22 +1132,15 @@ function renderFormPage(id) {
   btnRow.appendChild(loaderHolder);
   form.appendChild(btnRow);
 
-  // Fill initial values
   function setVal(key, val) {
     if (val == null) return;
-    if (key === "screenshots") {
-      fields.screenshots.input.value = Array.isArray(val) ? val.join("\n") : "";
-    } else {
-      fields[key].input.value = val;
-    }
+    if (key === "screenshots") fields.screenshots.input.value = Array.isArray(val) ? val.join("\n") : "";
+    else fields[key].input.value = val;
   }
-  ["name", "packageName", "versionCode", "version", "size", "category", "publisher", "rating", "downloads", "icon", "apkUrl", "sha256", "description", "fullDescription", "whatsNew"].forEach(k => setVal(k, v[k]));
+  ["name","packageName","versionCode","version","size","category","publisher","rating","downloads","icon","apkUrl","sha256","description","fullDescription","whatsNew"].forEach(k => setVal(k, v[k]));
   if (v.screenshots && v.screenshots.length) setVal("screenshots", v.screenshots);
-  if (v.icon && /^https:\/\//i.test(v.icon)) {
-    thumb.src = v.icon; thumb.style.display = "block"; thumbPh.style.display = "none";
-  }
+  if (v.icon && /^https:\/\//i.test(v.icon)) { thumb.src = v.icon; thumb.style.display = "block"; thumbPh.style.display = "none"; }
 
-  // Validation
   function clearErr(f) { f.err.textContent = ""; f.input.classList.remove("err"); }
   function setErr(f, msg) { f.err.textContent = msg; f.input.classList.add("err"); }
 
@@ -1490,17 +1166,14 @@ function renderFormPage(id) {
     }
     const sha = fields.sha256.input.value.trim();
     if (sha && !HEX64.test(sha.toLowerCase())) { setErr(fields.sha256, "64 lowercase hex characters"); ok = false; }
-    // duplicate package warning
     if (pkg && PKG_RE.test(pkg)) {
       const dup = Object.values(state.apps).find(a => a.packageName && a.packageName.toLowerCase() === pkg.toLowerCase() && a.id !== id);
       if (dup) setErr(fields.packageName, "⚠ Yeh package name already exists: " + dup.name);
     }
-    // screenshot https check
     const ss = fields.screenshots.input.value.split(/\n+/).map(s => s.trim()).filter(Boolean);
     for (const s of ss) {
       if (!/^https:\/\//i.test(s)) { setErr(fields.screenshots, "Screenshots https only"); ok = false; break; }
     }
-    // version warn on edit
     if (isEdit && existing && existing.versionCode && Number(vc) && Number(vc) <= existing.versionCode) {
       toast("Warning: naya versionCode purane se bada nahi hai", "err");
     }
@@ -1538,7 +1211,6 @@ function renderFormPage(id) {
         featured: featInp.checked,
         updatedAt: serverTimestamp()
       };
-      // Remove undefined
       Object.keys(data).forEach(k => { if (data[k] === undefined) delete data[k]; });
       if (isEdit) {
         await update(ref(db, `${APPS_PATH}/${id}`), data);
@@ -1550,7 +1222,7 @@ function renderFormPage(id) {
       toast("App save ho gaya", "ok");
       navigate("#/");
     } catch (err) {
-      toast("Save fail: " + (err.message || err.code), "err");
+      toast("Save fail: " + errInfo(err), "err");
     } finally {
       state.saving = false;
       saveBtn.disabled = false;
@@ -1608,8 +1280,7 @@ function renderFixPage() {
     row.appendChild(pkgInp);
 
     const vcInp = el("input", "input");
-    vcInp.type = "number";
-    vcInp.min = "1";
+    vcInp.type = "number"; vcInp.min = "1";
     vcInp.placeholder = "versionCode";
     vcInp.value = a.versionCode != null ? String(a.versionCode) : "";
     vcInp.setAttribute("aria-label", "Version code");
@@ -1641,7 +1312,7 @@ function renderFixPage() {
       await update(ref(db, `${APPS_PATH}/${id}`), { packageName: pkg, versionCode: n, updatedAt: serverTimestamp() });
       toast("Save ho gaya", "ok");
     } catch (e) {
-      toast("Save fail: " + (e.message || e.code), "err");
+      toast("Save fail: " + errInfo(e), "err");
     } finally {
       btn.disabled = false; btn.textContent = old;
     }
@@ -1674,7 +1345,6 @@ function renderIOPage() {
   const frag = document.createDocumentFragment();
   const grid = el("div", "io-grid");
 
-  // Export
   const exp = el("div", "card pad stack");
   exp.appendChild(el("h2", "section-title", "Export JSON"));
   exp.appendChild(el("p", "muted", "Sabhi apps ka JSON copy karein."));
@@ -1687,11 +1357,7 @@ function renderIOPage() {
   exp.appendChild(expBtn);
   exp.appendChild(ta);
   expBtn.addEventListener("click", async () => {
-    const arr = Object.values(state.apps).map(a => {
-      const clean = {};
-      Object.keys(a._raw).forEach(k => { clean[k] = a._raw[k]; });
-      return { id: a.id, ...clean };
-    });
+    const arr = Object.values(state.apps).map(a => ({ id: a.id, ...a._raw }));
     const json = JSON.stringify(arr, null, 2);
     ta.value = json;
     try {
@@ -1704,7 +1370,6 @@ function renderIOPage() {
   });
   grid.appendChild(exp);
 
-  // Import
   const imp = el("div", "card pad stack");
   imp.appendChild(el("h2", "section-title", "Import JSON"));
   imp.appendChild(el("p", "muted", "Array of apps ya object id->app accept karta hai. Duplicate packageName skip honge."));
@@ -1733,7 +1398,7 @@ function renderIOPage() {
     if (!canWrite()) { toast("Internet nahi hai", "err"); return; }
     let parsed;
     try { parsed = parseImport(inTa.value); }
-    catch (e) { toast("JSON galat hai", "err"); return; }
+    catch (_) { toast("JSON galat hai", "err"); return; }
     if (!parsed.length) { toast("Kuch import karne layak nahi", "err"); return; }
     let imported = 0, skipped = 0;
     const existingPkgs = new Set(Object.values(state.apps).map(a => safeLower(a.packageName)).filter(Boolean));
@@ -1801,7 +1466,7 @@ function buildCleanRecord(obj) {
 }
 
 /* ============================================================
-   APK READER (inline, module scope)
+   APK READER
    ============================================================ */
 function formatBytes(bytes) {
   if (bytes < 1024) return bytes + " B";
@@ -1811,8 +1476,6 @@ function formatBytes(bytes) {
 }
 
 async function sha256File(file, onProgress) {
-  const chunkSize = 4 * 1024 * 1024;
-  // crypto.subtle.digest needs all bytes — safe only for <=150MB
   const ab = await file.arrayBuffer();
   if (onProgress) onProgress(100);
   const hash = await crypto.subtle.digest("SHA-256", ab);
@@ -1828,33 +1491,25 @@ async function readApkMeta(file, onProgress) {
   try {
     const tail = new Uint8Array(await file.slice(tailStart).arrayBuffer());
     for (let i = tail.length - 22; i >= 0; i--) {
-      if (tail[i] === 0x50 && tail[i + 1] === 0x4b && tail[i + 2] === 0x05 && tail[i + 3] === 0x06) {
-        eocdOffset = i;
-        break;
-      }
+      if (tail[i] === 0x50 && tail[i+1] === 0x4b && tail[i+2] === 0x05 && tail[i+3] === 0x06) { eocdOffset = i; break; }
     }
     if (eocdOffset < 0) return null;
     const dv = new DataView(tail.buffer, tail.byteOffset);
-    const base = eocdOffset;
-    cdSize = dv.getUint32(base + 12, true);
-    cdOffset = dv.getUint32(base + 16, true);
+    cdSize = dv.getUint32(eocdOffset + 12, true);
+    cdOffset = dv.getUint32(eocdOffset + 16, true);
     if (cdSize === 0xFFFFFFFF || cdOffset === 0xFFFFFFFF) return null;
     if (cdOffset >= sizeBytes) return null;
   } catch (_) { return null; }
 
   if (onProgress) onProgress(20);
 
-  // Read central directory
   let cd;
   try {
-    const slice = file.slice(cdOffset, cdOffset + cdSize);
-    cd = new Uint8Array(await slice.arrayBuffer());
+    cd = new Uint8Array(await file.slice(cdOffset, cdOffset + cdSize).arrayBuffer());
   } catch (_) { return null; }
 
-  // Find AndroidManifest.xml entry
   const dv = new DataView(cd.buffer, cd.byteOffset);
-  let p = 0;
-  let manifest = null;
+  let p = 0, manifest = null;
   while (p + 46 <= cd.length) {
     const sig = dv.getUint32(p, true);
     if (sig !== 0x02014b50) break;
@@ -1865,37 +1520,27 @@ async function readApkMeta(file, onProgress) {
     const commentLen = dv.getUint16(p + 32, true);
     const localOffset = dv.getUint32(p + 42, true);
     if (p + 46 + nameLen > cd.length) break;
-    const nameBytes = cd.subarray(p + 46, p + 46 + nameLen);
-    const name = new TextDecoder("utf-8").decode(nameBytes);
-    if (name === "AndroidManifest.xml") {
-      manifest = { method, compSize, localOffset };
-      break;
-    }
+    const name = new TextDecoder("utf-8").decode(cd.subarray(p + 46, p + 46 + nameLen));
+    if (name === "AndroidManifest.xml") { manifest = { method, compSize, localOffset }; break; }
     p += 46 + nameLen + extraLen + commentLen;
   }
   if (!manifest) return null;
   if (onProgress) onProgress(35);
 
-  // Read local file header to locate data
-  let lfh;
   try {
-    const headerSlice = file.slice(manifest.localOffset, manifest.localOffset + 30);
-    lfh = new Uint8Array(await headerSlice.arrayBuffer());
+    const lfh = new Uint8Array(await file.slice(manifest.localOffset, manifest.localOffset + 30).arrayBuffer());
     if (lfh.length < 30) return null;
     const ldv = new DataView(lfh.buffer, lfh.byteOffset);
-    const sig = ldv.getUint32(0, true);
-    if (sig !== 0x04034b50) return null;
+    if (ldv.getUint32(0, true) !== 0x04034b50) return null;
     const fnameLen = ldv.getUint16(26, true);
     const extraLen = ldv.getUint16(28, true);
     const dataStart = manifest.localOffset + 30 + fnameLen + extraLen;
     const dataEnd = dataStart + manifest.compSize;
-    const dataSlice = file.slice(dataStart, dataEnd);
-    let comp = new Uint8Array(await dataSlice.arrayBuffer());
+    const comp = new Uint8Array(await file.slice(dataStart, dataEnd).arrayBuffer());
     let xmlBytes;
     if (manifest.method === 8) {
       const stream = new Blob([comp]).stream().pipeThrough(new DecompressionStream("deflate-raw"));
-      const ab = await new Response(stream).arrayBuffer();
-      xmlBytes = new Uint8Array(ab);
+      xmlBytes = new Uint8Array(await new Response(stream).arrayBuffer());
     } else if (manifest.method === 0) {
       xmlBytes = comp;
     } else {
@@ -1903,24 +1548,15 @@ async function readApkMeta(file, onProgress) {
     }
     if (onProgress) onProgress(60);
     return parseAxml(xmlBytes, { packageName: null, versionCode: null, versionName: null, sizeBytes });
-  } catch (_) {
-    return null;
-  }
+  } catch (_) { return null; }
 }
 
 function parseAxml(bytes, result) {
   try {
     if (bytes.length < 8) return null;
     const dv = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
-    const fileMagic = dv.getUint16(0, true);
-    if (fileMagic !== 0x0003) return null;
-    const fileSize = dv.getUint32(4, true);
-    if (fileSize > bytes.length) return null;
-
-    // Parse chunks
-    let pos = 8;
-    let strings = null;
-    let foundManifest = false;
+    if (dv.getUint16(0, true) !== 0x0003) return null;
+    let pos = 8, strings = null, foundManifest = false;
     while (pos + 8 <= bytes.length) {
       const chunkType = dv.getUint16(pos, true);
       const headerSize = dv.getUint16(pos + 2, true);
@@ -1928,7 +1564,6 @@ function parseAxml(bytes, result) {
       if (chunkSize < 8 || pos + chunkSize > bytes.length) break;
 
       if (chunkType === 0x0001) {
-        // String pool
         const strCount = dv.getUint32(pos + 8, true);
         const flags = dv.getUint32(pos + 16, true);
         const stringsStart = dv.getUint32(pos + 20, true);
@@ -1937,17 +1572,10 @@ function parseAxml(bytes, result) {
         strings = [];
         for (let i = 0; i < strCount; i++) {
           const off = dv.getUint32(offsetsBase + i * 4, true);
-          const strPos = pos + stringsStart + off;
-          try {
-            strings.push(readString(dv, bytes, strPos, isUtf8));
-          } catch (_) {
-            strings.push("");
-          }
+          try { strings.push(readString(dv, bytes, pos + stringsStart + off, isUtf8)); }
+          catch (_) { strings.push(""); }
         }
-      } else if (chunkType === 0x0180) {
-        // Resource map — skip
       } else if (chunkType === 0x0102) {
-        // Start element
         if (!strings) break;
         const extStart = pos + headerSize;
         const nameIdx = dv.getUint32(extStart + 4, true);
@@ -1963,18 +1591,12 @@ function parseAxml(bytes, result) {
             const attrNameIdx = dv.getUint32(ap + 4, true);
             const rawValue = dv.getInt32(ap + 8, true);
             const dataType = dv.getUint8(ap + 15);
-            const data = dv.getUint32(ap + 16, true);
             const attrName = strings[attrNameIdx] || "";
             let strVal = null;
-            if (dataType === 0x03) {
-              strVal = rawValue >= 0 ? strings[rawValue] : null;
-            }
+            if (dataType === 0x03) strVal = rawValue >= 0 ? strings[rawValue] : null;
             if (attrName === "package" && strVal != null) result.packageName = strVal;
-            else if (attrName === "versionCode" && dataType === 0x10) result.versionCode = data >>> 0;
-            else if (attrName === "versionCode" && dataType === 0x11) {
-              const intVal = dv.getInt32(ap + 16, true);
-              result.versionCode = intVal;
-            }
+            else if (attrName === "versionCode" && dataType === 0x10) result.versionCode = dv.getUint32(ap + 16, true);
+            else if (attrName === "versionCode" && dataType === 0x11) result.versionCode = dv.getInt32(ap + 16, true);
             else if (attrName === "versionName" && strVal != null) result.versionName = strVal;
           }
           foundManifest = true;
@@ -1984,23 +1606,18 @@ function parseAxml(bytes, result) {
       pos += chunkSize;
       if (foundManifest) break;
     }
-    if (!foundManifest) return null;
-    return result;
-  } catch (_) {
-    return null;
-  }
+    return foundManifest ? result : null;
+  } catch (_) { return null; }
 }
 
 function readString(dv, bytes, pos, isUtf8) {
   if (isUtf8) {
-    // 1-2 bytes char count, then 1-2 bytes byte count
     let p = pos;
-    let u16len = bytes[p++];
-    if (u16len & 0x80) { u16len = ((u16len & 0x7f) << 8) | bytes[p++]; }
+    let charLen = bytes[p++];
+    if (charLen & 0x80) charLen = ((charLen & 0x7f) << 8) | bytes[p++];
     let byteLen = bytes[p++];
-    if (byteLen & 0x80) { byteLen = ((byteLen & 0x7f) << 8) | bytes[p++]; }
-    const slice = bytes.subarray(p, p + byteLen);
-    return new TextDecoder("utf-8").decode(slice);
+    if (byteLen & 0x80) byteLen = ((byteLen & 0x7f) << 8) | bytes[p++];
+    return new TextDecoder("utf-8").decode(bytes.subarray(p, p + byteLen));
   } else {
     let p = pos;
     let len = dv.getUint16(p, true); p += 2;
@@ -2009,20 +1626,127 @@ function readString(dv, bytes, pos, isUtf8) {
       len = (low << 16) | dv.getUint16(p, true); p += 2;
     }
     const chars = [];
-    for (let i = 0; i < len; i++) {
-      chars.push(dv.getUint16(p + i * 2, true));
-    }
+    for (let i = 0; i < len; i++) chars.push(dv.getUint16(p + i * 2, true));
     return String.fromCharCode(...chars);
   }
 }
 
 /* ============================================================
-   INITIAL ROUTE
+   INIT APP
    ============================================================ */
-if (!location.hash) location.hash = "#/";
-state.currentRoute = location.hash;
-// If user already logged in (redirect result), initApp will fire via onAuthStateChanged.
-// Safety: after 2s if still on login and auth resolved with no user, leave login screen as is.
+function subscribeApps() {
+  if (state.unsubApps) { try { state.unsubApps(); } catch(_){} state.unsubApps = null; }
+  try {
+    const q = query(ref(db, APPS_PATH), orderByChild("createdAt"));
+    state.unsubApps = onValue(q, (snap) => {
+      state.firstLoad = false;
+      state.readError = null;
+      const val = snap.val();
+      const map = {};
+      if (val && typeof val === "object") {
+        Object.keys(val).forEach(k => { map[k] = normalize(k, val[k]); });
+      }
+      state.apps = map;
+      state.categories = new Set(Object.values(map).map(a => a.category).filter(Boolean));
+      updateTabCounts();
+      renderRoute();
+    }, (err) => {
+      state.firstLoad = false;
+      state.readError = err;
+      renderRoute();
+    });
+  } catch (e) {
+    state.firstLoad = false;
+    state.readError = e;
+    renderRoute();
+  }
+}
+
+function initApp() {
+  state.firstLoad = true;
+  state.readError = null;
+  state.apps = {};
+  renderRoute();
+  subscribeApps();
+  subscribeConnection();
+  updateOnlineUI();
+}
+
+/* ============================================================
+   LOGIN (sirf ADMIN_EMAILS)
+   ============================================================ */
+const gate = document.getElementById("gate");
+const gateMsg = document.getElementById("gateMsg");
+const gateLogin = document.getElementById("gateLogin");
+const gateOut = document.getElementById("gateOut");
+const userNameEl = document.getElementById("userName");
+const signOutBtn = document.getElementById("signOutBtn");
+let started = false;
+
+async function doLogin() {
+  gateLogin.disabled = true;
+  gateMsg.textContent = "Google login khul raha hai…";
+  const provider = new GoogleAuthProvider();
+  provider.setCustomParameters({ prompt: "select_account" });
+  try {
+    await signInWithPopup(auth, provider);
+  } catch (e) {
+    const code = (e && e.code) || "";
+    if (code === "auth/popup-blocked" || code === "auth/operation-not-supported-in-this-environment") {
+      try { await signInWithRedirect(auth, provider); return; } catch (e2) { e = e2; }
+    }
+    const c = (e && e.code) || "";
+    if (c === "auth/unauthorized-domain") {
+      gateMsg.textContent = "Ye domain Firebase me authorized nahi hai. Authentication -> Settings -> Authorized domains me is site ka domain jodein.";
+    } else if (c === "auth/popup-closed-by-user" || c === "auth/cancelled-popup-request") {
+      gateMsg.textContent = "Login band kar diya gaya. Dobara try karein.";
+    } else {
+      gateMsg.textContent = "Login nahi hua: " + ((e && (e.message || e.code)) || "unknown error");
+    }
+  } finally {
+    gateLogin.disabled = false;
+  }
+}
+async function doSignOut() { try { await signOut(auth); } catch (_) {} }
+gateLogin.addEventListener("click", doLogin);
+gateOut.addEventListener("click", doSignOut);
+signOutBtn.addEventListener("click", doSignOut);
+
+function stopListeners() {
+  if (state.unsubApps) { try { state.unsubApps(); } catch (_) {} state.unsubApps = null; }
+  if (unsubConn) { try { unsubConn(); } catch (_) {} unsubConn = null; }
+  started = false;
+}
+
+onAuthStateChanged(auth, (user) => {
+  const email = ((user && user.email) || "").toLowerCase();
+  const isAdmin = !!user && ADMIN_EMAILS.map(x => x.toLowerCase()).includes(email);
+  if (isAdmin) {
+    gate.classList.add("hidden");
+    userNameEl.textContent = user.displayName || user.email;
+    userNameEl.classList.remove("hidden");
+    signOutBtn.classList.remove("hidden");
+    if (!started) {
+      started = true;
+      if (!location.hash) location.hash = "#/";
+      initApp();
+    }
+  } else {
+    stopListeners();
+    gate.classList.remove("hidden");
+    userNameEl.classList.add("hidden");
+    signOutBtn.classList.add("hidden");
+    if (user) {
+      gateMsg.textContent = "Aap admin nahi hain (" + user.email + "). Sahi Google account se login karein.";
+      gateLogin.classList.add("hidden");
+      gateOut.classList.remove("hidden");
+    } else {
+      gateMsg.textContent = "Admin panel ke liye Google se login karein.";
+      gateLogin.classList.remove("hidden");
+      gateOut.classList.add("hidden");
+    }
+  }
+});
 </script>
 </body>
 </html>
